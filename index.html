@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gouni Sai Bhavuktha Reddy - Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2.12.0/tsparticles.engine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+darkMode: 'class',
+theme: {
+extend: {
+colors: {
+dark: '#121212',
+'dark-lighter': '#1F1F1F',
+}
+}
+}
+}
+</script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+.gradient-text {
+background: linear-gradient(45deg, #f97316, #fb923c);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+.hover-up {
+transition: transform 0.3s ease;
+}
+.hover-up:hover {
+transform: translateY(-8px);
+}
+.skill-badge {
+background-color: rgba(249, 115, 22, 0.2);
+color: #f97316;
+padding: 0.5rem 1rem;
+border-radius: 9999px;
+margin-right: 0.5rem;
+}
+</style>
+</head>
+<body class="bg-dark text-gray-100 font-['Inter']">
+
+<!-- Header -->
+<header class="fixed w-full bg-dark/80 backdrop-blur-md border-b border-gray-800 z-50">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <!-- Name/Logo -->
+      <div class="text-2xl font-bold gradient-text">Gouni Sai Bhavuktha Reddy </div>
+
+      <!-- Navigation Menu -->
+      <nav class="flex flex-wrap justify-center gap-4 mb-4 md:mb-0">
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#home">Home</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#about">About</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#technical-skills">Skills</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#projects">Projects</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#internships">Internships</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#certifications">Certifications</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#achievements">Achievements</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#education">Education</a>
+        <a class="text-gray-300 hover:text-orange-400 transition duration-300" href="#contact">Contact</a>
+      </nav>
+
+      <!-- Contact Info & Social Links -->
+      <div class="flex items-center gap-6">
+        <div class="hidden md:flex flex-col text-right">
+          <span class="text-gray-300 text-sm">saibhavuktha@gmail.com</span>
+          <span class="text-gray-300 text-sm">+91-8247437304</span>
+        </div>
+        <div class="flex gap-4">
+          <a class="text-gray-300 hover:text-orange-400 transition duration-300 text-2xl" 
+             href="https://www.linkedin.com/in/gouni-sai-bhavuktha-reddy-0274a0281" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="text-gray-300 hover:text-orange-400 transition duration-300 text-2xl" 
+             href="hhttps://github.com/Bhavukthagouni" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-dark to-dark" id="home">
+    <!-- Particle Background -->
+    <div id="tsparticles" class="absolute inset-0"></div>
+  
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6">
+      <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
+        <span class="gradient-text">Hello, I'm Sai Bhavuktha</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-gray-300 mb-8">
+        Electronics & Communication Engineer | Machine Learning Enthusiast
+      </p>
+<a href="#projects" 
+         class="inline-block px-10 py-4 bg-gradient-to-r from-orange-500 to-orange-400 text-white rounded-full font-semibold shadow-lg transition-transform transform hover:scale-105 hover:from-orange-600 hover:to-orange-500">
+        View My Work
+      </a>
+    </div>
+</section>
+
+<!-- Insert sections here -->
+<!-- About Section -->
+<section class="py-20 bg-dark" id="about">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">About Me</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Image Section with Hover Effect -->
+          <div class="relative flex justify-center">
+              <img src="hero.png" alt="Profile Image" 
+                  class="w-full max-w-md md:max-w-lg lg:max-w-md rounded-lg shadow-2xl fade-effect"/>
+          </div>
+
+          <!-- Text Content -->
+          <div class="space-y-6 text-center md:text-left max-w-xl mx-auto md:mx-0">
+              <p class="text-lg md:text-xl text-gray-300 leading-relaxed">
+                  I am an Electronics and Communication Engineering student at VIT, Vellore, with a solid technical foundation in IoT, Deep Learning, and Machine Learning. My academic journey includes hands-on experience in these fields, allowing me to develop innovative solutions to complex problems. I also hold a Google Cloud Computing certification, highlighting my dedication to continuous learning and professional growth.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Image Fade Effect */
+.fade-effect {
+    filter: brightness(90%) contrast(90%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.fade-effect:hover {
+    filter: brightness(100%) contrast(100%);
+}
+</style>
+
+
+<!-- Technical Skills Section -->
+<section class="py-24 bg-dark" id="technical-skills">
+  <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Technical Skills</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Programming Languages -->
+          <div class="bg-dark-lighter p-8 rounded-2xl shadow-2xl hover-up transition-transform transform hover:scale-105">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                  <i class="fas fa-code text-orange-400 text-3xl mr-4"></i>
+                  Programming Languages
+              </h3>
+              <div class="flex flex-wrap gap-6 text-lg font-medium">
+                  <span class="flex items-center"><i class="fab fa-java text-orange-400 text-xl mr-3"></i>Java</span>
+                  <span class="flex items-center"><i class="fas fa-c text-blue-400 text-xl mr-3"></i>C++</span>
+                  <span class="flex items-center"><i class="fab fa-python text-yellow-400 text-xl mr-3"></i>Python</span>
+                  <span class="flex items-center"><i class="fas fa-database text-green-400 text-xl mr-3"></i>SQL</span>
+                  <span class="flex items-center"><i class="fas fa-project-diagram text-purple-400 text-xl mr-3"></i>MATLAB</span>
+                  <span class="flex items-center"><i class="fas fa-microchip text-teal-400 text-xl mr-3"></i>Verilog</span>
+                  <span class="flex items-center"><i class="fas fa-microchip text-red-400 text-xl mr-3"></i>Embedded C</span>
+              </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="bg-dark-lighter p-8 rounded-2xl shadow-2xl hover-up transition-transform transform hover:scale-105">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                  <i class="fas fa-globe text-orange-400 text-3xl mr-4"></i>
+                  Web Development
+              </h3>
+              <div class="flex flex-wrap gap-6 text-lg font-medium">
+                  <span class="flex items-center"><i class="fab fa-html5 text-orange-400 text-xl mr-3"></i>HTML</span>
+                  <span class="flex items-center"><i class="fab fa-css3-alt text-blue-400 text-xl mr-3"></i>CSS</span>
+                  <span class="flex items-center"><i class="fab fa-angular text-red-400 text-xl mr-3"></i>Angular</span>
+                  <span class="flex items-center"><i class="fab fa-node-js text-green-400 text-xl mr-3"></i>Node.js</span>
+                  <span class="flex items-center"><i class="fab fa-react text-blue-400 text-xl mr-3"></i>React.js</span>
+                  <span class="flex items-center"><i class="fab fa-js text-yellow-400 text-xl mr-3"></i>JavaScript</span>
+                  <span class="flex items-center"><i class="fas fa-database text-green-400 text-xl mr-3"></i>MySQL</span>
+              </div>
+          </div>
+
+          <!-- Developer Tools -->
+          <div class="bg-dark-lighter p-8 rounded-2xl shadow-2xl hover-up transition-transform transform hover:scale-105">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                  <i class="fas fa-tools text-orange-400 text-3xl mr-4"></i>
+                  Developer Tools
+              </h3>
+              <div class="flex flex-wrap gap-6 text-lg font-medium">
+                  <span class="flex items-center"><i class="fab fa-git-alt text-red-400 text-xl mr-3"></i>Git</span>
+                  <span class="flex items-center"><i class="fas fa-laptop-code text-gray-400 text-xl mr-3"></i>Eclipse</span>
+                  <span class="flex items-center"><i class="fas fa-book text-yellow-400 text-xl mr-3"></i>Jupyter Notebook</span>
+              </div>
+          </div>
+
+          <!-- Hardware Tools -->
+          <div class="bg-dark-lighter p-8 rounded-2xl shadow-2xl hover-up transition-transform transform hover:scale-105">
+              <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
+                  <i class="fas fa-microchip text-orange-400 text-3xl mr-4"></i>
+                  Hardware Tools
+              </h3>
+              <div class="flex flex-wrap gap-6 text-lg font-medium">
+                  <span class="flex items-center"><i class="fas fa-microchip text-green-400 text-xl mr-3"></i>Cadence Virtuoso</span>
+                  <span class="flex items-center"><i class="fas fa-microchip text-blue-400 text-xl mr-3"></i>ModelSim</span>
+                  <span class="flex items-center"><i class="fas fa-microchip text-purple-400 text-xl mr-3"></i>Multisim</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- Projects Section -->
+<section class="py-24 bg-dark" id="projects">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Face Recognition-Based Attendance System -->
+      <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+        <div class="p-3 bg-orange-500/20 rounded-lg mb-4">
+          <i class="fas fa-camera text-3xl text-orange-400"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Face Recognition-Based Attendance System</h3>
+        <p class="text-gray-400 mb-4">Created an automated attendance tracking system leveraging OpenCV and Python. Integrated real-time facial recognition capabilities with camera functionality, resulting in a 40% reduction in manual attendance entry errors.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Python</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">OpenCV</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Flask</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">dlib</span>
+        </div>
+      </div>
+
+      <!-- Synchronized Biometric System -->
+      <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+        <div class="p-3 bg-orange-500/20 rounded-lg mb-4">
+          <i class="fas fa-fingerprint text-3xl text-orange-400"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Synchronized Biometric - Passkey Security System</h3>
+        <p class="text-gray-400 mb-4">Constructed a dual-layer biometric lock solution utilizing relay technology and fingerprint recognition. Achieved 95% recognition accuracy with rapid activation times averaging at just half a second.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">C++</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Embedded Systems</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Biometrics</span>
+        </div>
+      </div>
+
+      <!-- IOT Based Smart Irrigation -->
+      <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+        <div class="p-3 bg-orange-500/20 rounded-lg mb-4">
+          <i class="fas fa-seedling text-3xl text-orange-400"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">IOT Based Smart Irrigation System</h3>
+        <p class="text-gray-400 mb-4">Implemented a comprehensive monitoring solution utilizing IoT technology for tracking critical irrigation parameters. Managing irrigation for over 100 acres with 99% operational uptime.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">IoT</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Arduino</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Sensors</span>
+        </div>
+      </div>
+
+      <!-- Industrial Monitoring System -->
+      <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+        <div class="p-3 bg-orange-500/20 rounded-lg mb-4">
+          <i class="fas fa-industry text-3xl text-orange-400"></i>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Industrial Monitoring System with Embedded GUI</h3>
+        <p class="text-gray-400 mb-4">Created a real-time monitoring interface for industrial metrics using C++ for data processing and QT/QML for the user interface. Integrated dynamic charting with QtCharts for live data visualization.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">C++</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">QT/QML</span>
+          <span class="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-full text-sm">Embedded Linux</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Internships Section -->
+<section class="py-24 bg-dark" id="internships">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Internships</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- KEC International -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <div class="flex items-start space-x-4">
+                  <div class="p-3 bg-orange-500/20 rounded-lg">
+                      <i class="fas fa-industry text-3xl text-orange-400"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-bold text-white mb-2">Industrial Intern - KEC International Limited</h3>
+                      <p class="text-gray-400 mb-2">Developed and implemented SCADA systems incorporating VSAT communication, RTU integration, and switchgear protection for the outdoor GIS substation project.</p>
+                      <p class="text-sm text-gray-500 mb-2">November 2023 – December 2023</p>
+                      <a href="https://drive.google.com/file/d/1-y5da2XGEWGYSr0scJt02-J_vim_eBWG/view" class="inline-flex items-center text-orange-400 hover:text-orange-300 cursor-pointer underline">
+                          View Certificate
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Maven Silicon -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <div class="flex items-start space-x-4">
+                  <div class="p-3 bg-orange-500/20 rounded-lg">
+                      <i class="fas fa-microchip text-3xl text-orange-400"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-bold text-white mb-2">VLSI Design Internship - Maven Silicon</h3>
+                      <p class="text-gray-400 mb-2">Worked on RISC-V RV32I RTL Design Project using Verilog HDL. Gained comprehensive understanding of system architecture and VLSI Design Methodologies.</p>
+                      <p class="text-sm text-gray-500 mb-2">October 2023 - December 2023</p>
+                      <a href="https://drive.google.com/file/d/11nRMnMRkJYoGKLBHiPEmATmKcrhUThjf/view" class="inline-flex items-center text-orange-400 hover:text-orange-300 cursor-pointer underline">
+                          View Certificate
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Certifications Section -->
+<section class="py-24 bg-dark" id="certifications">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Certifications</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+          <!-- Google Cloud Certification -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <div class="flex items-start space-x-4">
+                  <div class="p-3 bg-orange-500/20 rounded-lg">
+                      <i class="fab fa-google text-3xl text-orange-400"></i>
+                  </div>
+                  <div>
+                      <h3 class="text-xl font-bold text-white mb-2">Google Cloud Computing Certificate</h3>
+                      <p class="text-gray-400 mb-2">Secured 100/100 in all the labs provided by Google Cloud Platform.</p>
+                      <a href="https://drive.google.com/file/d/1SPLNh78OdsUhEjhnVkp7GfeEvD2F0M4f/view" class="inline-flex items-center text-orange-400 hover:text-orange-300 cursor-pointer underline">
+                          View Certificate
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Positions & Activities Section -->
+<section class="py-24 bg-dark" id="achievements">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Positions & Activities</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Positions of Responsibility -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <h3 class="text-xl font-bold text-white mb-4">Positions of Responsibility</h3>
+              <ul class="space-y-3">
+                  <li class="flex items-start space-x-3">
+                      <i class="fas fa-chevron-right text-orange-400 mt-1"></i>
+                      <span class="text-gray-300">Member in IEEE Nuclear and Plasma Sciences and Society (IEEE-NPSS)</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                      <i class="fas fa-chevron-right text-orange-400 mt-1"></i>
+                      <span class="text-gray-300">Active member of the Electronics Club (TEC)</span>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Extra-Curricular Activities -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <h3 class="text-xl font-bold text-white mb-4">Extra-Curricular Activities</h3>
+              <ul class="space-y-3">
+                  <li class="flex items-start space-x-3">
+                      <i class="fas fa-chevron-right text-orange-400 mt-1"></i>
+                      <span class="text-gray-300">Participated in Glitch 3.0 organized by the ELECTRONICS CLUB</span>
+                  </li>
+                  <li class="flex items-start space-x-3">
+                      <i class="fas fa-chevron-right text-orange-400 mt-1"></i>
+                      <span class="text-gray-300">Earned certification in SENSORED 6.0 organized by ELECTRONICS CLUB</span>
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Other Information -->
+          <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+              <h3 class="text-xl font-bold text-white mb-4">Other Information</h3>
+              <div class="space-y-4">
+                  <div>
+                      <h4 class="text-orange-400 font-semibold mb-2">Languages Known</h4>
+                      <p class="text-gray-300">English, Telugu, Hindi, Basic Spanish</p>
+                  </div>
+                  <div>
+                      <h4 class="text-orange-400 font-semibold mb-2">Hobbies & Interests</h4>
+                      <p class="text-gray-300">Bharatanatyam, Badminton, Music, Books</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Education Section -->
+<section class="py-24 bg-dark" id="education">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Education</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+  <div class="flex items-start space-x-4">
+  <div class="p-3 bg-orange-500/20 rounded-lg">
+                  <i class="fas fa-university text-3xl text-orange-400"></i>
+  </div>
+  <div>
+  <h3 class="text-xl font-bold text-white mb-2">VELLORE INSTITUTE OF TECHNOLOGY</h3>
+  <p class="text-gray-400">B. Tech, Electronics and Communication Engineering</p>
+  <p class="text-orange-400 font-semibold mt-2">CGPA: 8.29</p>
+  <p class="text-sm text-gray-500">2021-2025</p>
+  </div>
+  </div>
+  </div>
+  
+  <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+  <div class="flex items-start space-x-4">
+  <div class="p-3 bg-orange-500/20 rounded-lg">
+                  <i class="fas fa-school text-3xl text-orange-400"></i>
+  </div>
+  <div>
+  <h3 class="text-xl font-bold text-white mb-2">Narayana Junior College</h3>
+  <p class="text-orange-400 font-semibold">Percentage: 94.2%</p>
+  <p class="text-sm text-gray-500">2019-2021</p>
+  </div>
+  </div>
+  </div>
+  
+  <div class="bg-dark-lighter p-6 rounded-xl shadow-xl hover-up relative">
+  <div class="flex items-start space-x-4">
+  <div class="p-3 bg-orange-500/20 rounded-lg">
+                  <i class="fas fa-graduation-cap text-3xl text-orange-400"></i>
+  </div>
+  <div>
+  <h3 class="text-xl font-bold text-white mb-2">St Joseph's English Medium School</h3>
+  <p class="text-orange-400 font-semibold">Percentage: 87.8%</p>
+  <p class="text-sm text-gray-500">2018-2019</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="py-24 bg-dark" id="contact">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16 gradient-text tracking-wide">Contact Me</h2>
+        
+        <form action="https://formsubmit.co/saibhavuktha@gmail.com" method="POST" class="max-w-lg mx-auto bg-dark p-8 rounded-xl shadow-xl hover-up">
+          <!-- Name Input -->
+          <div class="mb-6">
+            <label for="name" class="block text-gray-300 mb-2">Name</label>
+            <input 
+              type="text" id="name" name="name" required 
+              class="w-full p-3 bg-dark-lighter border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 text-white"
+            />
+          </div>
+    
+          <!-- Email Input -->
+          <div class="mb-6">
+            <label for="email" class="block text-gray-300 mb-2">Email</label>
+            <input 
+              type="email" id="email" name="email" required 
+              class="w-full p-3 bg-dark-lighter border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 text-white"
+            />
+          </div>
+    
+          <!-- Message Input -->
+          <div class="mb-6">
+            <label for="message" class="block text-gray-300 mb-2">Message</label>
+            <textarea 
+              id="message" name="message" rows="4" required 
+              class="w-full p-3 bg-dark-lighter border border-gray-700 rounded-lg focus:outline-none focus:border-orange-500 text-white"
+            ></textarea>
+          </div>
+    
+          <!-- Hidden Fields for FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+          
+          <!-- Submit Button -->
+          <button 
+            type="submit" 
+            class="w-full py-3 px-6 bg-gradient-to-r from-orange-500 to-orange-400 text-white rounded-lg font-medium hover:from-orange-600 hover:to-orange-500 transition duration-300 transform hover:scale-105">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-8 bg-dark border-t border-gray-800">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400">© 2025 Gouni Sai Bhavuktha Reddy</p>
+      </div>
+    </footer>
+  
+
+<script>
+// Initialize tsParticles
+window.onload = async function() {
+await tsParticles.load("tsparticles", {
+fpsLimit: 60,
+particles: {
+number: {
+value: 80,
+density: {
+enable: true,
+value_area: 800
+}
+},
+color: {
+value: "#f97316"
+},
+shape: {
+type: "circle"
+},
+opacity: {
+value: 0.5,
+random: false
+},
+size: {
+value: 3,
+random: true
+},
+line_linked: {
+enable: true,
+distance: 150,
+color: "#f97316",
+opacity: 0.2,
+width: 1
+},
+move: {
+enable: true,
+speed: 2,
+direction: "none",
+random: false,
+straight: false,
+out_mode: "out",
+bounce: false
+}
+},
+interactivity: {
+detect_on: "canvas",
+events: {
+onhover: {
+enable: true,
+mode: "grab"
+},
+onclick: {
+enable: true,
+mode: "push"
+},
+resize: true
+}
+},
+retina_detect: true
+});
+};
+
+// Enhanced Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetID = this.getAttribute('href');
+        const targetElement = document.querySelector(targetID);
+        if (targetElement) {
+            const headerOffset = document.querySelector("header")?.offsetHeight || 0;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset - 10;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+</script>
+</body>
+</html>
